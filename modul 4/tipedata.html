@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Tipe Data Angka </h1>
+    <div id="hasilAngka"></div>
+    
+    <script>
+        // Tipe data angka
+        let bilanganBulat = 20;         // Integer
+        let bilanganDesimal = 3.14;     // Float / decimal
+        let negatif = -5;               // Angka negatif
+        let hasil = "";
+        // Operasi matematika
+        let penjumlahan = bilanganBulat + bilanganDesimal;
+        let perkalian = bilanganBulat * negatif;
+        let pembagian = bilanganBulat / 2;
+        let modulus = bilanganBulat % 3;
+    
+        hasil += "Bilangan Bulat: " + bilanganBulat + "<br>";
+        hasil += "Bilangan Desimal: " + bilanganDesimal + "<br>";
+        hasil += "Bilangan Negatif: " + negatif + "<br><br>";
+    
+        hasil += "Penjumlahan: " + penjumlahan + "<br>";
+        hasil += "Perkalian: " + perkalian + "<br>";
+        hasil += "Pembagian: " + pembagian + "<br>";
+        hasil += "Sisa Bagi (modulus): " + modulus + "<br>";
+    
+        document.getElementById("hasilAngka").innerHTML = hasil;
+    </script>      
+</body>
+</html>

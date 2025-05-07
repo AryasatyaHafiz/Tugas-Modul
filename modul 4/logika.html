@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Operasi Logika</h1>
+    <div id="hasilLogika"></div>
+
+    <script>
+        let a = true;
+        let b = false;
+        let hasil = "";
+    
+        hasil += "a && b: " + (a && b) + "<br>";
+        hasil += "a || b: " + (a || b) + "<br>"; 
+        hasil += "!a: " + (!a) + "<br>";          
+        hasil += "!b: " + (!b) + "<br>";          
+    
+        document.getElementById("hasilLogika").innerHTML = hasil;
+    </script>        
+</body>
+</html>

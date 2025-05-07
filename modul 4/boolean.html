@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1> Tipe Data Boolean</h1>
+    <div id="hasilBoolean"></div>
+    
+    <script>
+        // Tipe data Boolean
+        let benar = true;
+        let salah = false;
+        let hasil = "";
+    
+        hasil += "Nilai 'benar': " + benar + "<br>";
+        hasil += "Nilai 'salah': " + salah + "<br><br>";
+        let umur = 20;
+        let cukupUmur = umur >= 18; 
+        hasil += "Apakah umur >= 18 " + cukupUmur + "<br>";
+        if (cukupUmur) {
+            hasil += "Status: Diizinkan masuk.<br>";
+        } else {
+            hasil += "Status: Tidak diizinkan masuk.<br>";
+        }
+        document.getElementById("hasilBoolean").innerHTML = hasil;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Operator Bitwise</h1>
+    <div id="hasilBitwise"></div>
+  
+    <script>
+      let a = 2; // Biner: 0010
+      let b = 8; // Biner: 1000
+      let hasil = "";
+  
+      hasil += "a & b = " + (a & b) + " (Biner: " + (a & b).toString(2) + ")<br>";
+      hasil += "a | b = " + (a | b) + " (Biner: " + (a | b).toString(2) + ")<br>";
+      hasil += "a ^ b = " + (a ^ b) + " (Biner: " + (a ^ b).toString(2) + ")<br>";
+      hasil += "~a = " + (~a) + " (Biner: " + (~a >>> 0).toString(2) + ")<br>"; 
+  
+      hasil += "a << 1 = " + (a << 1) + " (Biner: " + (a << 1).toString(2) + ")<br>";
+      hasil += "a >> 1 = " + (a >> 1) + " (Biner: " + (a >> 1).toString(2) + ")<br>";
+      hasil += "-5 >>> 1 = " + (-5 >>> 1) + " (Biner: " + (-5 >>> 1).toString(2) + ")<br>";
+  
+      document.getElementById("hasilBitwise").innerHTML = hasil;
+    </script>  
+</body>
+</html>

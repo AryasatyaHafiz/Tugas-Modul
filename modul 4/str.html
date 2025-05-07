@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Contoh Tipe Data String</h1>
+    <div id="hasilString"></div>
+    
+    <script>
+        // Tipe data String
+        let nama = "Aryasatya";
+        let kota = 'Cikarang Jawa Barat';
+        let hasil = "";
+        // Penggabungan string
+        let kalimat = "Halo, nama saya " + nama + " dari " + kota + ".";
+        // Panjang string
+        let panjangNama = nama.length;
+        // Akses karakter
+        let hurufPertama = nama[0];
+        let hurufTerakhir = nama[nama.length - 1];
+        // Tampilkan hasil
+        hasil += "Nama: " + nama + "<br>";
+        hasil += "Kota: " + kota + "<br>";
+        hasil += "Kalimat: " + kalimat + "<br><br>";
+        hasil += "Panjang nama: " + panjangNama + "<br>";
+        hasil += "Huruf pertama dari nama: " + hurufPertama + "<br>";
+        hasil += "Huruf terakhir dari nama: " + hurufTerakhir + "<br>";
+        document.getElementById("hasilString").innerHTML = hasil;
+    </script>
+    
+</body>
+</html>

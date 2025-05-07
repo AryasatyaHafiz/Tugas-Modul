@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Hasil Operasi Asiggn</h1>
+    <div id="hasilPemberianNilai"></div>
+    
+    <script>
+        let x = 8;  
+        let hasil = "";
+        hasil += "x =  ";
+        x = 8;
+        hasil += x + "<br>"; 
+        hasil += "x += 3 (sebelum: " + x + "): ";
+        x += 3;
+        hasil += x + "<br>"; 
+        hasil += "x -= 2 (sebelum: " + x + "): ";
+        x -= 2;
+        hasil += x + "<br>"; 
+        hasil += "x *= 4 (sebelum: " + x + "): ";
+        x *= 4;
+        hasil += x + "<br>";
+        hasil += "x /= 2 (sebelum: " + x + "): ";
+        x /= 2;
+        hasil += x + "<br>"; 
+        hasil += "x %= 3 (sebelum: " + x + "): ";
+        x %= 3;
+        hasil += x + "<br>"; 
+        document.getElementById("hasilPemberianNilai").innerHTML = hasil;
+    </script>
+</body>
+</html>

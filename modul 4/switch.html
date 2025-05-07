@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Switch</h1>
+    <div id="hasilSwitch"></div>
+    
+    <script>
+        let hari = "Senin";
+        let hasil = "";
+    
+        switch (hari) {
+            case "Senin":
+                hasil = "Hari ini adalah Senin, saatnya semangat kerja!";
+                break;
+            case "Selasa":
+                hasil = "Hari ini adalah Selasa.";
+                break;
+            case "Rabu":
+                hasil = "Hari ini adalah Rabu.";
+                break;
+            case "Kamis":
+                hasil = "Hari ini adalah Kamis.";
+                break;
+            case "Jumat":
+                hasil = "Hari ini adalah Jumat, hampir akhir pekan!";
+                break;
+            case "Sabtu":
+            case "Minggu":
+                hasil = "Ini akhir pekan, waktunya istirahat.";
+                break;
+            default:
+                hasil = "Hari tidak dikenali.";
+                break;
+        }
+    
+        document.getElementById("hasilSwitch").innerHTML = hasil;
+    </script>
+    
+</body>
+</html>

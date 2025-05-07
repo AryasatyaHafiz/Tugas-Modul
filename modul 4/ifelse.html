@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Percabangan if, if else, dan else</h1>
+    <div id="hasilPercabangan"></div>
+    
+    <script>
+        let nilai = 75;
+        let hasil = "";
+    
+        // Percabangan if
+        if (nilai >= 90) {
+            hasil += "Nilai Anda A<br>";
+        }
+        // Percabangan if else
+        else if (nilai >= 75) {
+            hasil += "Nilai Anda B<br>";
+        }
+        // Percabangan else
+        else {
+            hasil += "Nilai Anda C<br>";
+        }
+        // Percabangan tambahan dengan if
+        if (nilai >= 60) {
+            hasil += "Anda LULUS<br>";
+        } else {
+            hasil += "Anda TIDAK LULUS<br>";
+        }
+        document.getElementById("hasilPercabangan").innerHTML = hasil;
+    </script>
+</body>
+</html>

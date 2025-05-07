@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARYASATYA</title>
+    
+</head>
+<body>
+    <h1>Selamat Datang di Halaman Utama</h1>
+    <p id="pesan"></p>
+  <!-- JavaScript lokal -->
+  <script src="url.js"></script>
+  <!-- Library moment.js dari CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <!-- JavaScript untuk menampilkan tanggal & waktu -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('pesan').textContent =
+        "Halaman ini dimuat pada: " + moment().format('MMMM Do YYYY, h:mm:ss a');
+    });
+  </script>
+</body>
+</html>
